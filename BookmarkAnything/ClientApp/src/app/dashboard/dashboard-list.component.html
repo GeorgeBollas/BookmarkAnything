@@ -1,0 +1,20 @@
+<h1>Dashboard</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!lists"><em>Loading...</em></p>
+
+<button mat-button (click)="newListDialog()">New</button>
+
+<table class='table' *ngIf="lists">
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let list of lists">
+      <td>{{ list.name }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Hi </h1>
+<div mat-dialog-content>
+  <p>What's your favorite animal?</p>
+  <mat-form-field>
+    <input matInput placeholder="Name" required type="text" [(ngModel)]="data.name">
+    <mat-error *ngIf="nameFormControl.invalid">Name is required</mat-error>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+</div>
