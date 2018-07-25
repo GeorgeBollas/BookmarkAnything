@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bookmarking.Domain.SeedWork
+namespace BookmarkAnything.Services.Bookmarking.Domain.SeedWork
 {
     public interface IAggregateRoot
     {

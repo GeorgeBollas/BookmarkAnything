@@ -4,11 +4,12 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Bookmarking.Domain.SeedWork
+namespace BookmarkAnything.Services.Bookmarking.Domain.SeedWork
 {
     public interface IUnitOfWork: IDisposable
     {
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken));
+
         Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken));
     }
 }

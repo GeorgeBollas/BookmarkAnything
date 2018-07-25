@@ -1,10 +1,23 @@
-﻿using System;
+﻿using BookmarkAnything.Services.Bookmarking.Domain.AggregateModel.BookmarkListAggregate;
+using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bookmarking.Domain.Events
+namespace BookmarkAnything.Services.Bookmarking.Domain.Events
 {
-    class BookmarkListCreatedDomainEvent
+    /// <summary>
+    /// Event is used when Bookmark List is created
+    /// </summary>
+    public class BookmarkListCreatedDomainEvent: INotification
     {
+        public string UserName { get; }
+        public BookmarkList BookmarkList { get; }
+
+        public BookmarkListCreatedDomainEvent(BookmarkList bookmarkList, string userName)
+        {
+            BookmarkList = bookmarkList;
+            UserName = UserName;
+        }
     }
 }

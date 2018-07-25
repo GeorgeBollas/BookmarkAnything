@@ -2,9 +2,19 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bookmarking.Domain.Exceptions
+namespace BookmarkAnything.Services.Bookmarking.Domain.Exceptions
 {
-    class BookmarkListDomainException
+    public class BookmarkListDomainException: Exception
     {
+        public BookmarkListDomainException()
+        { }
+
+        public BookmarkListDomainException(string message)
+            : base(message)
+        { }
+
+        public BookmarkListDomainException(string message, Exception innerException)
+            : base(message, innerException)
+        { }
     }
 }
