@@ -5,19 +5,19 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookmarkAnything", "BookmarkAnything\BookmarkAnything.csproj", "{53D4F9AD-31A4-480C-BF01-339F7B6989E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookmarkAnything.Data", "BookmarkAnything.Data\BookmarkAnything.Data.csproj", "{FE825513-8E2B-47BE-90F2-8FB5B3276ABB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookmarkAnything.Application", "BookmarkAnything.Application\BookmarkAnything.Application.csproj", "{7646753A-A0DE-4B1E-AB9E-96FB1F40FDE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D94FDA8E-2D3E-4D49-852E-DA1AC798D173}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bookmarking", "Bookmarking", "{2FDCD989-90B4-43E8-9BD4-91C879F6EACA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookmarking.Api", "Bookmarking.Api\Bookmarking.Api.csproj", "{FE0DF0A1-A9E2-40B2-B420-76E1AD67B5C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookmarking.Api", "Bookmarking.Api\Bookmarking.Api.csproj", "{FE0DF0A1-A9E2-40B2-B420-76E1AD67B5C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookmarking.Domain", "Bookmarking.Domain\Bookmarking.Domain.csproj", "{B58A162C-FE87-45C1-B0AC-5AD093FCA00E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookmarking.Domain", "Bookmarking.Domain\Bookmarking.Domain.csproj", "{B58A162C-FE87-45C1-B0AC-5AD093FCA00E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookmarking.Infrastructure", "Bookmarking.Infrastructure\Bookmarking.Infrastructure.csproj", "{9332BC38-3947-4573-81C6-68EE4975C964}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookmarking.Infrastructure", "Bookmarking.Infrastructure\Bookmarking.Infrastructure.csproj", "{9332BC38-3947-4573-81C6-68EE4975C964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookmarking.BackgroundTasks", "Bookmarking.BackgroundTasks\Bookmarking.BackgroundTasks.csproj", "{2519FFBF-5CA1-49C5-9CF3-A5E393568419}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		{53D4F9AD-31A4-480C-BF01-339F7B6989E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53D4F9AD-31A4-480C-BF01-339F7B6989E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53D4F9AD-31A4-480C-BF01-339F7B6989E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE825513-8E2B-47BE-90F2-8FB5B3276ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE825513-8E2B-47BE-90F2-8FB5B3276ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE825513-8E2B-47BE-90F2-8FB5B3276ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE825513-8E2B-47BE-90F2-8FB5B3276ABB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7646753A-A0DE-4B1E-AB9E-96FB1F40FDE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7646753A-A0DE-4B1E-AB9E-96FB1F40FDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7646753A-A0DE-4B1E-AB9E-96FB1F40FDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,6 +45,10 @@ Global
 		{9332BC38-3947-4573-81C6-68EE4975C964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9332BC38-3947-4573-81C6-68EE4975C964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9332BC38-3947-4573-81C6-68EE4975C964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2519FFBF-5CA1-49C5-9CF3-A5E393568419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2519FFBF-5CA1-49C5-9CF3-A5E393568419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2519FFBF-5CA1-49C5-9CF3-A5E393568419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2519FFBF-5CA1-49C5-9CF3-A5E393568419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +58,7 @@ Global
 		{FE0DF0A1-A9E2-40B2-B420-76E1AD67B5C7} = {2FDCD989-90B4-43E8-9BD4-91C879F6EACA}
 		{B58A162C-FE87-45C1-B0AC-5AD093FCA00E} = {2FDCD989-90B4-43E8-9BD4-91C879F6EACA}
 		{9332BC38-3947-4573-81C6-68EE4975C964} = {2FDCD989-90B4-43E8-9BD4-91C879F6EACA}
+		{2519FFBF-5CA1-49C5-9CF3-A5E393568419} = {2FDCD989-90B4-43E8-9BD4-91C879F6EACA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA98CFB9-F704-4969-8CB1-FCB1589D879D}

@@ -4,16 +4,16 @@ using System.Text;
 
 namespace BookmarkAnything.Services.Bookmarking.Domain.Exceptions
 {
-    public class BookmarkListDomainException: Exception
+    public class BookmarkingDomainException: Exception
     {
-        public BookmarkListDomainException()
+        public BookmarkingDomainException()
         { }
 
-        public BookmarkListDomainException(string message)
+        public BookmarkingDomainException(string message)
             : base(message)
         { }
 
-        public BookmarkListDomainException(string message, Exception innerException)
+        public BookmarkingDomainException(string message, Exception innerException)
             : base(message, innerException)
         { }
     }
