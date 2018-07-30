@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookmarkAnything", "BookmarkAnything\BookmarkAnything.csproj", "{53D4F9AD-31A4-480C-BF01-339F7B6989E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookmarkAnything.Application", "BookmarkAnything.Application\BookmarkAnything.Application.csproj", "{7646753A-A0DE-4B1E-AB9E-96FB1F40FDE9}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D94FDA8E-2D3E-4D49-852E-DA1AC798D173}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bookmarking", "Bookmarking", "{2FDCD989-90B4-43E8-9BD4-91C879F6EACA}"
@@ -29,10 +27,6 @@ Global
 		{53D4F9AD-31A4-480C-BF01-339F7B6989E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53D4F9AD-31A4-480C-BF01-339F7B6989E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53D4F9AD-31A4-480C-BF01-339F7B6989E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7646753A-A0DE-4B1E-AB9E-96FB1F40FDE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7646753A-A0DE-4B1E-AB9E-96FB1F40FDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7646753A-A0DE-4B1E-AB9E-96FB1F40FDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7646753A-A0DE-4B1E-AB9E-96FB1F40FDE9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE0DF0A1-A9E2-40B2-B420-76E1AD67B5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FE0DF0A1-A9E2-40B2-B420-76E1AD67B5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE0DF0A1-A9E2-40B2-B420-76E1AD67B5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
