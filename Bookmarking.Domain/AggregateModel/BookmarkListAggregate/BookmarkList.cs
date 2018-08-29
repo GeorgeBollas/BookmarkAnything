@@ -9,17 +9,19 @@ namespace BookmarkAnything.Services.Bookmarking.Domain.AggregateModel.BookmarkLi
     public class BookmarkList: Entity, IAggregateRoot
     {
         public string Name;
+        public string UserId;
 
-        public BookmarkList(string name, string userName)
+        public BookmarkList(string name, string userId)
         {
             Name = name;
+            UserId = userId;
         }
 
 
-        private void AddBookmarkListCreatedDomainEvent(string userName, BookmarkList bookmarkList)
+        private void AddBookmarkListCreatedDomainEvent(string userId, BookmarkList bookmarkList)
         {
             //?: should this be done when contructor called or when saved
-            var bookmarkListCreatedDomainEvent = new BookmarkListCreatedDomainEvent(this, userName);
+            var bookmarkListCreatedDomainEvent = new BookmarkListCreatedDomainEvent(this, userId);
 
             this.AddDomainEvent(bookmarkListCreatedDomainEvent);
         }

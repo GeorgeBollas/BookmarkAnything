@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Bookmarking.Api.Application.Queries
 {
-    public class BookmarkListQueries : IBookmarkingQueries
+    public class BookmarkingQueries : IBookmarkingQueries
     {
         private string _connectionString = string.Empty;
 
-        public BookmarkListQueries(string constr)
+        public BookmarkingQueries(string constr)
         {
             _connectionString = !string.IsNullOrEmpty(constr) ? constr : throw new ArgumentNullException(nameof(constr));
         }

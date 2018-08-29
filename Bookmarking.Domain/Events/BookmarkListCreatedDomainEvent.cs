@@ -11,13 +11,13 @@ namespace BookmarkAnything.Services.Bookmarking.Domain.Events
     /// </summary>
     public class BookmarkListCreatedDomainEvent: INotification
     {
-        public string UserName { get; }
+        public string UserId { get; }
         public BookmarkList BookmarkList { get; }
 
-        public BookmarkListCreatedDomainEvent(BookmarkList bookmarkList, string userName)
+        public BookmarkListCreatedDomainEvent(BookmarkList bookmarkList, string userId)
         {
             BookmarkList = bookmarkList;
-            UserName = UserName;
+            UserId = UserId;
         }
     }
 }
