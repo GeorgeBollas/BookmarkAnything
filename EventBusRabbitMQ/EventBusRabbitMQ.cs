@@ -219,7 +219,7 @@ namespace EventBusRabbitMQ
                         {
                             var handler = scope.ResolveOptional(subscription.HandlerType) as IDynamicIntegrationEventHandler;
                             dynamic eventData = JObject.Parse(message);
-                            await handler.Handle(eventData);
+                            //await handler.Handle(eventData);
                         }
                         else
                         {

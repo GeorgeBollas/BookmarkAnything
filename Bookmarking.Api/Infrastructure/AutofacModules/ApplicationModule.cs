@@ -31,8 +31,8 @@ namespace Bookmarking.Api.Infrastructure.AutofacModules
                 .As<IBookmarkListRepository>()
                 .InstancePerLifetimeScope();
 
-            builder.RegisterAssemblyTypes(typeof(CreateBookmarkListCommandHandler).GetTypeInfo().Assembly)
-                .AsClosedTypesOf(typeof(IIntegrationEventHandler<>)); //? part of Eventing
+            //builder.RegisterAssemblyTypes(typeof(CreateBookmarkListCommandHandler).GetTypeInfo().Assembly)
+            //    .AsClosedTypesOf(typeof(IIntegrationEventHandler<>)); //? part of Eventing
         }
     }
 }
